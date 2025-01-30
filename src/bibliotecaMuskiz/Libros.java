@@ -116,13 +116,13 @@ public class Libros implements ObtenerDatos {
 	@Override
 	public void obtenerNombre() {
 		// TODO Auto-generated method stub
-		System.out.println("El nombre del libro es"+titulo);
+		System.out.println("El nombre del libro es "+titulo);
 	}
 
 	@Override
 	public void obtenerCodigo() {
 		// TODO Auto-generated method stub
-		System.out.println("El codigo del libro es"+isbn);
+		System.out.println("El codigo del libro es "+isbn);
 	}
 
 }

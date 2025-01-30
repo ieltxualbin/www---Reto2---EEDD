@@ -2,35 +2,38 @@ package bibliotecaMuskiz;
 
 import java.util.Objects;
 
-public abstract class Usuarios {
-	private int codigo;
-	private String dni;
-	private String nombre;
-	private int telefono;
-	private String correo;
-	private String usuario;
-	private String contraseña;
+public abstract class Usuarios implements ObtenerDatos {
+	protected int codigo;
+	protected String dni;
+	protected String nombre;
+	protected int telefono;
+	protected String correo;
+	protected String usuario;
+	protected String contraseña;
 	
 	
-	///// METODODS /////
+	///// METODOS /////
 	public void cambiarTelf(int telefono) {
 		this.telefono = telefono;
+		System.out.println("Se ha cambiado el telefono correctamente a "+telefono);
 	}
 	
 	public void cambiarCorreo(String correo) {
 		this.correo = correo;
+		System.out.println("Se ha cambiado el correo correctamente a "+correo);
 	}
 	
 	public void cambiarUser(String usuario) {
 		this.usuario = usuario;
+		System.out.println("Se ha cambiado el usuario correctamente a "+usuario);
 	}
 	
 	public void cambiarPass(String contraseña) {
 		this.contraseña = contraseña;
+		System.out.println("Se ha cambiado la contraseña correctamente");
 	}
 	
-	public void saludar() {
-	}
+	public abstract void saludar();
 	
 	
 	/////CONSTRUCTORES/////

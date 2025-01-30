@@ -3,23 +3,23 @@ package bibliotecaMuskiz;
 import java.util.Objects;
 
 public class Penalizaciones implements ObtenerDatos{
-	private int codido;
+	private int codigo;
 	private String nombre;
 	private int libros_permitidos;
 	
 	
 	
-	////CONSTRUCTORES////
-	public Penalizaciones(int codido, String nombre, int libros_permitidos) {
+	//// CONSTRUCTORES ////
+	public Penalizaciones(int codigo, String nombre, int libros_permitidos) {
 		super();
-		this.codido = codido;
+		this.codigo = codigo;
 		this.nombre = nombre;
 		this.libros_permitidos = libros_permitidos;
 	}
 	
-	public Penalizaciones(int codido) {
+	public Penalizaciones(int codigo) {
 		super();
-		this.codido = codido;
+		this.codigo = codigo;
 		this.nombre = "****";
 		this.libros_permitidos = 0;
 	}
@@ -27,17 +27,17 @@ public class Penalizaciones implements ObtenerDatos{
 	
 	///// GETTERS & SETTERS/////
 	/**
-	 * @return the codido
+	 * @return the codigo
 	 */
-	public int getCodido() {
-		return codido;
+	public int getCodigo() {
+		return codigo;
 	}
 
 	/**
-	 * @param codido the codido to set
+	 * @param codigo the codigo to set
 	 */
-	public void setCodido(int codido) {
-		this.codido = codido;
+	public void setCodigo(int codido) {
+		this.codigo = codido;
 	}
 
 	/**
@@ -69,18 +69,16 @@ public class Penalizaciones implements ObtenerDatos{
 	}
 	
 	//// TOSTRING ////
-
-	
 	@Override
 	public String toString() {
-		return "Penalizaciones [codido=" + codido + ", nombre=" + nombre + ", libros_permitidos=" + libros_permitidos
+		return "Penalizaciones [codido=" + codigo + ", nombre=" + nombre + ", libros_permitidos=" + libros_permitidos
 				+ "]";
 	}
 
 	///// HASHCODE & EQUALS /////
 	@Override
 	public int hashCode() {
-		return Objects.hash(codido, libros_permitidos, nombre);
+		return Objects.hash(codigo, libros_permitidos, nombre);
 	}
 
 	@Override
@@ -92,25 +90,26 @@ public class Penalizaciones implements ObtenerDatos{
 		if (getClass() != obj.getClass())
 			return false;
 		Penalizaciones other = (Penalizaciones) obj;
-		return codido == other.codido && libros_permitidos == other.libros_permitidos
+		return codigo == other.codigo && libros_permitidos == other.libros_permitidos
 				&& Objects.equals(nombre, other.nombre);
 	}
 	
 	//// METODOS ////
 	public void modificarPermitido(int libros_permitidos) {
 		this.libros_permitidos = libros_permitidos;
+		System.out.println("Cambiados los libros permitidos a "+libros_permitidos);
 	}
 
 	@Override
 	public void obtenerNombre() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("El nombre de la penalizacion es "+nombre+" y el numero de libros permitidos es de "+libros_permitidos);
 	}
 
 	@Override
 	public void obtenerCodigo() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("El codigo de la penalizacion es "+codigo);
 	}
 	
 	

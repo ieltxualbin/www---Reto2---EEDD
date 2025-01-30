@@ -50,7 +50,7 @@ public class Estados implements ObtenerDatos {
 		this.nombre = nombre;
 	}
 	
-	////TOSTRING ////
+	//// TOSTRING ////
 	@Override
 	public String toString() {
 		return "Estados [codigo=" + codigo + ", nombre=" + nombre + "]";
@@ -74,16 +74,16 @@ public class Estados implements ObtenerDatos {
 		return codigo == other.codigo && Objects.equals(nombre, other.nombre);
 	}
 	
-	////METODOS ////
+	//// METODOS ////
 	@Override
 	public void obtenerNombre() {
-		System.out.println("El estado del libro es"+nombre);
+		System.out.println("El estado del libro es "+nombre);
 	}
 
 	@Override
 	public void obtenerCodigo() {
 		// TODO Auto-generated method stub
-		System.out.println("El codigo del estado es"+codigo);
+		System.out.println("El codigo del estado es "+codigo);
 	}
 	
 }

@@ -93,12 +93,12 @@ public class Autores implements ObtenerDatos {
 	/// METODOS ///
 	@Override
 	public void obtenerNombre() {
-		System.out.println("El nombre del autor es"+nombre);
+		System.out.println("El nombre del autor es "+nombre);
 	}
 
 	@Override
 	public void obtenerCodigo() {
-		System.out.println("El codigo del autor es"+codigo);
+		System.out.println("El codigo del autor es "+codigo);
 	}
 
 }

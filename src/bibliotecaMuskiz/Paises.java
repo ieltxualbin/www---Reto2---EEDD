@@ -69,9 +69,9 @@ public class Paises implements ObtenerDatos {
 	
 	/// METODOS ///
 	public void obtenerNombre() {
-		System.out.println("El nombre del pais es"+nombre);
+		System.out.println("El nombre del pais es "+nombre);
 	}
 	public void obtenerCodigo() {
-		System.out.println("El codigo del pais es"+codigo);
+		System.out.println("El codigo del pais es "+codigo);
 	}
 }
