@@ -22,7 +22,7 @@ public class Autores implements ObtenerDatos {
 		this.apellido = "";
 	}
 	
-	/// GETER Y SETER ///
+	/// GETTERS y SETTERS ///
 	/**
 	 * @return the codigo
 	 */

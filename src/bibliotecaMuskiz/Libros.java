@@ -25,7 +25,7 @@ public class Libros implements ObtenerDatos {
 		this.valoracion = 0;
 	}
 
-	/// GETER Y SETER ///
+	/// GETTERS y SETTERS ///
 	/**
 	 * @return the codigo
 	 */

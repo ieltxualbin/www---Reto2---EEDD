@@ -13,7 +13,7 @@ public class Paises implements ObtenerDatos {
 		this.nombre = nombre;
 	}
 	
-	/// GETER y SETER ///
+	/// GETTERS y SETTERS ///
 
 	/**
 	 * @return the codigo

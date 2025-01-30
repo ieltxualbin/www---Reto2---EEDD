@@ -2,7 +2,7 @@ package bibliotecaMuskiz;
 
 import java.util.Objects;
 
-public class Estados {
+public class Estados implements ObtenerDatos {
 	private int codigo;
 	private String nombre;
 	
@@ -14,16 +14,10 @@ public class Estados {
 		this.nombre = nombre;
 	}
 	
-	public Estados (int codigo) {
-		super();
-		this.codigo = codigo;
-		this.nombre = "****";
-	}
-	
 	public Estados () {
 		super();
 		this.codigo = 0;
-		this.nombre = "****";
+		this.nombre = "Incalculabre";
 	}
 
 	
@@ -55,6 +49,12 @@ public class Estados {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+	////TOSTRING ////
+	@Override
+	public String toString() {
+		return "Estados [codigo=" + codigo + ", nombre=" + nombre + "]";
+	}
 
 	///// HASCHCODE & EQUALS /////
 	@Override
@@ -72,6 +72,18 @@ public class Estados {
 			return false;
 		Estados other = (Estados) obj;
 		return codigo == other.codigo && Objects.equals(nombre, other.nombre);
+	}
+	
+	////METODOS ////
+	@Override
+	public void obtenerNombre() {
+		System.out.println("El estado del libro es"+nombre);
+	}
+
+	@Override
+	public void obtenerCodigo() {
+		// TODO Auto-generated method stub
+		System.out.println("El codigo del estado es"+codigo);
 	}
 	
 }
